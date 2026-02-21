@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Art Promotion</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="logo-header">
+    <img src="images/logo.jpeg" class="logo">
+  </header>
+    <div class="main">
+      <div class="text-area">
+        <h1>Unveiling Hidden Talents</h1>
+        <p>
+          From hidden talent to center stage - NexaPromo helps local artists reach the world.
+        </p>
+        <div class="buttons">
+          <button class="btn-main">Explore art</button>
+          <button class="btn-main-second">Support artists</button>
+        </div>
+        <h3 class="section-header">Featured Talents</h3>
+        <div class="gallery">
+          <div class="gallery-scroll">
+            <div class="card"></div>
+            <div class="card">
+              <img src="images/pic3.webp">
+              <p>Raghunath Sharma</p>
+            </div>
+            <div class="card">
+              <img src="images/pic4.jpg">
+              <p>Kamala Iyer</p>
+            </div>
+            <div class="card">
+              <img src="images/pic5.jpg">
+              <p>Bhaskar Choudhury</p>
+            </div>
+          <div class="card"></div>
+          </div>
+        </div>
+      </div>
+      <div class="image-area">
+        <img src="images/pic1.jpeg" class="arch-image">
+        <img src="images/pic2.jpeg" class="arch-image two">
+        <img src="images/pic6.jpg" class="arch-image three">
+        <img src="images/pic7.webp" class="arch-image four">
+      <div class="image-box"></div>
+      </div>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+    <script>
+      const cards = document.querySelectorAll('.card');
+      const scroll = document.querySelector('.gallery-scroll');
+      function updateActiveCard() {
+        const center=scroll.scrollLeft+scroll.offsetWidth/2;
+        cards.forEach(card=> {
+          const cardCenter=card.offsetLeft+card.offsetWidth/2;
+          card.classList.remove('active');
+          if(Math.abs(center-cardCenter)<card.offsetWidth/2){
+            card.classList.add('active');
+          }
+        });
+      }
+      scroll.addEventListener('scroll',updateActiveCard);
+      updateActiveCard();
+    </script>
+</body>
+</html>
