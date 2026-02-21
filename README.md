@@ -1,22 +1,10 @@
-# 🐶 dog-breed-guide
-Web-based dog breed reference with breed profiles, descriptions, and visuals, built using **HTML**, **CSS** and **JavaScript**.
+# Landing Page for promoting local artists
+Built using **HTML**, **CSS** and **JavaScript**.
 
-### ✨ Features
-- List of common dog breeds
-- Breed images and descriptions
-- Search + filter options
-- Click to view more details
+### ✨ About
+- This is a landing page designed to promote local artists.
+- The goal is to create a visually appealing platform.
 
-### 👨‍💻 Status
-Project starting - HTML structure coming soon!
-
-### 🤝 Contributions
-Suggestions & PRs are welcome!
-
-## To Do List
-- [ ] Add layout
-- [ ] Add breed cards
-- [ ] Add images
-- [ ] Add search/filter
-
-## Currently in progress
+### 🎯 Purpose
+- To practice frontend development.
+- To design a clean promotional landing page.
